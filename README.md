@@ -8,6 +8,21 @@ This project implements a simple Flask API that estimates stakeholder engagement
 - **`Dockerfile`**: Defines the containerized environment with Python 3.10 and all dependencies. It ensures consistent behavior across machines by isolating the environment.
 - **`requirements.txt`**: Lists all required Python packages (`flask`, `scikit-learn`, `numpy`) to run the API inside Docker.
 
+## Viewing Model Parameters (Intercept and Coefficients)
+
+The app prints the trained regression model’s parameters — including:
+
+- **Intercept (α)**: The baseline engagement score
+- **Coefficients (τ, β)**: The estimated average treatment effect and spending effect
+
+To view them:
+
+### ▶️ If running without Docker:
+
+```bash
+python3 app.py
+
+
 ## How to Run
 
 ### **Build the Docker image**
